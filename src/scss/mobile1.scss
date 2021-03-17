@@ -1,0 +1,148 @@
+// This is where you can import other stylesheets or write your scss code
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+@include media-breakpoint-between(sm, md) {
+  // Styles
+}
+// A map of breakpoints.
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+);
+nav {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 50px;
+
+  a {
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    float: right;
+  }
+  header {
+    background-image: url(../images/header.jpg);
+    height: 30vh;
+    background-size: cover;
+
+    h1 {
+      color: rgb(10, 16, 102);
+      text-align: center;
+      padding-top: 80px;
+    }
+  }
+  main {
+    .text {
+      padding: 8px;
+    }
+    margin: 10px auto;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+
+    .first {
+      padding: 20px;
+      width: 100%;
+
+      display: block;
+      gap: 10px;
+      flex-wrap: wrap;
+      .right {
+        padding: 10px;
+        background-color: rgb(208, 247, 208);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .img1 {
+          height: 200px;
+          width: 400px;
+          background-image: url(../images/mountain.jpg);
+          background-size: cover;
+          overflow: hidden;
+        }
+      }
+      .left {
+        padding: 10px;
+        background-color: rgb(208, 247, 208);
+        display: flex;
+        width: 100%;
+        .img2 {
+          height: 200px;
+          width: 100%;
+          background-image: url(../images/surfer.jpg);
+          background-size: cover;
+        }
+      }
+    }
+    .second {
+      border-radius: 5%;
+      display: flex;
+      padding: 20px;
+      width: 50%;
+      margin: auto;
+      background-color: rgb(208, 247, 208);
+      .img3 {
+        height: 200px;
+        width: 100%;
+        background-image: url(../images/tree.jpg);
+        background-size: cover;
+        overflow: hidden;
+      }
+    }
+    img {
+      width: 200px;
+      height: 200x;
+    }
+    .third {
+      width: 100%;
+      display: flex;
+      gap: 3px;
+      .text {
+        padding: 8px;
+      }
+      .aside1,
+      .aside2 {
+        border: rgb(232, 252, 232) solid;
+        height: 200px;
+        width: 25%;
+        border-radius: 5%;
+      }
+      .article {
+        width: 60%;
+      }
+    }
+  }
+  footer {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 100px;
+    background-color: rgb(38, 38, 233);
+    a {
+      color: white;
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
