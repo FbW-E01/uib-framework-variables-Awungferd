@@ -1,2 +1,169 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+nav,
+footer {
+  height: 10vh;
+  background: #f6f9fa;
+
+  ul {
+    list-style: none;
+    height: 9vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 6px;
+  }
+}
+
+.hero {
+  background-image: url(../images/header.jpg);
+  height: 30vh;
+  background-size: cover;
+}
+h1 {
+  font-weight: bold;
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.card {
+  padding: 10px;
+  background-color: #ece8af;
+  border: #dad6ab solid;
+  margin: 20px;
+  border-radius: 5px;
+}
+aside {
+  border: #dad6ab solid;
+  margin: 20px;
+  padding: 10px;
+}
+article {
+  padding: 10px;
+  margin: 20px;
+}
+h3 {
+  font-weight: bold;
+}
+footer {
+  background-color: #016690;
+  a {
+    color: white;
+  }
+}
+//begin tablet breakpoint styling
+
+@media (min-width: 768px) {
+  nav {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    li {
+      padding: 1.2em;
+    }
+  }
+  .hero {
+    h1 {
+      padding-top: 6vh;
+    }
+  }
+
+  .card {
+    padding: 10px;
+    background-color: #ece8af;
+    border: #dad6ab solid;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    .text {
+      padding: 20px;
+    }
+    img {
+      width: 200px;
+      height: 220px;
+      object-fit: cover;
+    }
+  }
+  .grandpie {
+    display: flex;
+    article {
+      padding: 0px;
+      margin: 20px 0 20px 0;
+    }
+  }
+
+  footer {
+    background-color: #016690;
+    a {
+      color: white;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+    }
+    li {
+      padding: 2em;
+    }
+  }
+}
+//begin desktop styling
+@media (min-width: 1024px) {
+  nav,
+  footer {
+    ul {
+      list-style: none;
+      height: 9vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 1.3rem;
+      padding: 6px;
+    }
+  }
+
+  .hero {
+    background-image: url(../images/header.jpg);
+    height: 30vh;
+    background-size: cover;
+  }
+  h1 {
+    font-weight: bold;
+    padding-top: 10vh;
+    text-align: center;
+  }
+  .cardholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+      padding: 10px;
+      background-color: #ece8af;
+      border: #dad6ab solid;
+      border-radius: 5px;
+      width: 45%;
+    }
+  }
+
+  footer {
+    background-color: #016690;
+    a {
+      color: white;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      padding: 2em;
+    }
+  }
+}
